@@ -1,6 +1,6 @@
 # 🤖 Chat with PDF locally using Ollama + LangChain + Large Language Model
 
-A powerful local RAG (Retrieval Augmented Generation) application that lets you chat with your PDF documents using Ollama and LangChain. This project includes both a Jupyter notebook for experimentation.
+A powerful local RAG (Retrieval Augmented Generation) application that lets you chat with your PDF documents using Ollama and LangChain. This project includes a Jupyter notebook for experimentation.
 
 ## ✨ Features
 
@@ -37,16 +37,7 @@ A powerful local RAG (Retrieval Augmented Generation) application that lets you 
 
 ### 🎮 Running the Application
 
-#### Option 1: Streamlit Interface
-```bash
-streamlit run streamlit_app.py
-```
-Then open your browser to `http://localhost:8501`
-
-![Streamlit UI](st_app_ui.png)
-*Streamlit interface showing PDF viewer and chat functionality*
-
-#### Option 2: Jupyter Notebook
+#### Option 1: Jupyter Notebook
 ```bash
 jupyter notebook
 ```
@@ -93,13 +84,3 @@ Try these solutions:
    pip install onnxruntime
    ```
 
-
-This project is open source and available under the MIT License.
-
----
-
-## ⭐️ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=tonykipkemboi/ollama_pdf_rag&type=Date)](https://star-history.com/#tonykipkemboi/ollama_pdf_rag&Date)
-
-Built with ❤️ by [Tony Kipkemboi](https://x.com/tonykipkemboi)
