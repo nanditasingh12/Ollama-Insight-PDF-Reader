@@ -37,11 +37,13 @@ A powerful local RAG (Retrieval Augmented Generation) application that lets you 
 
 ### 🎮 Running the Application
 
-#### Option 1: Jupyter Notebook
+#### 1: Jupyter Notebook
 ```bash
 jupyter notebook
 ```
 Open `updated_rag_notebook.ipynb` to experiment with the code
+For my case this is the output I got: ![image](https://github.com/user-attachments/assets/53ff6b12-e883-4c71-b053-687d94f508d4)
+
 
 ## 💡 Usage Tips
 
