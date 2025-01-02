@@ -1,11 +1,6 @@
-# 🤖 Chat with PDF locally using Ollama + LangChain
+# 🤖 Chat with PDF locally using Ollama + LangChain + Large Language Model
 
-A powerful local RAG (Retrieval Augmented Generation) application that lets you chat with your PDF documents using Ollama and LangChain. This project includes both a Jupyter notebook for experimentation and a Streamlit web interface for easy interaction.
-
-## 📺 Video Tutorial
-<a href="https://youtu.be/ztBJqzBU5kc">
-  <img src="https://img.youtube.com/vi/ztBJqzBU5kc/hqdefault.jpg" alt="Watch the video" width="100%">
-</a>
+A powerful local RAG (Retrieval Augmented Generation) application that lets you chat with your PDF documents using Ollama and LangChain. This project includes both a Jupyter notebook for experimentation.
 
 ## ✨ Features
 
@@ -13,7 +8,6 @@ A powerful local RAG (Retrieval Augmented Generation) application that lets you 
 - 📄 PDF processing with intelligent chunking
 - 🧠 Multi-query retrieval for better context understanding
 - 🎯 Advanced RAG implementation using LangChain
-- 🖥️ Clean Streamlit interface
 - 📓 Jupyter notebook for experimentation
 
 ## 🚀 Getting Started
@@ -24,20 +18,20 @@ A powerful local RAG (Retrieval Augmented Generation) application that lets you 
    - Visit [Ollama's website](https://ollama.ai) to download and install
    - Pull required models:
      ```bash
-     ollama pull llama2  # or your preferred model
+     ollama pull llama2  # ollama pull llama3.2 or your preffered model
      ollama pull nomic-embed-text
      ```
 
 2. **Clone Repository**
    ```bash
-   git clone https://github.com/tonykipkemboi/ollama_pdf_rag.git
-   cd ollama_pdf_rag
+   git clone https://github.com/nanditasingh12/Ollama-Insight-PDF-Reader.git
+   cd Ollama-Insight-PDF-Reader.git
    ```
 
 3. **Set Up Environment**
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+   source venv/bin/activate  # On Windows: .\venv\Scripts\activate #(Activate your environment)
    pip install -r requirements.txt
    ```
 
@@ -79,7 +73,6 @@ Feel free to:
 - Ensure Ollama is running in the background
 - Check that required models are downloaded
 - Verify Python environment is activated
-- For Windows users, ensure WSL2 is properly configured if using Ollama
 
 ### Common Errors
 
@@ -100,22 +93,6 @@ Try these solutions:
    pip install onnxruntime
    ```
 
-#### CPU-Only Systems
-If you're running on a CPU-only system:
-
-1. Ensure you have the CPU version of ONNX Runtime:
-   ```bash
-   pip uninstall onnxruntime-gpu  # Remove GPU version if installed
-   pip install onnxruntime  # Install CPU-only version
-   ```
-
-2. You may need to modify the chunk size in the code to prevent memory issues:
-   - Reduce `chunk_size` to 500-1000 if you experience memory problems
-   - Increase `chunk_overlap` for better context preservation
-
-Note: The application will run slower on CPU-only systems, but it will still work effectively.
-
-## 📝 License
 
 This project is open source and available under the MIT License.
 
